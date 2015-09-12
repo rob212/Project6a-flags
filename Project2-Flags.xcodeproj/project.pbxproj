@@ -13,6 +13,7 @@
 		7020831D1BA443B9007C8DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7020831C1BA443B9007C8DD5 /* Assets.xcassets */; };
 		702083201BA443B9007C8DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020831E1BA443B9007C8DD5 /* LaunchScreen.storyboard */; };
 		7020832B1BA443B9007C8DD5 /* Project2_FlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020832A1BA443B9007C8DD5 /* Project2_FlagsTests.swift */; };
+		702083361BA48B15007C8DD5 /* Array+Shuffling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702083351BA48B15007C8DD5 /* Array+Shuffling.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		702083261BA443B9007C8DD5 /* Project2-FlagsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project2-FlagsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7020832A1BA443B9007C8DD5 /* Project2_FlagsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2_FlagsTests.swift; sourceTree = "<group>"; };
 		7020832C1BA443B9007C8DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702083351BA48B15007C8DD5 /* Array+Shuffling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				702083151BA443B9007C8DD5 /* AppDelegate.swift */,
 				702083171BA443B9007C8DD5 /* ViewController.swift */,
+				702083351BA48B15007C8DD5 /* Array+Shuffling.swift */,
 				702083191BA443B9007C8DD5 /* Main.storyboard */,
 				7020831C1BA443B9007C8DD5 /* Assets.xcassets */,
 				7020831E1BA443B9007C8DD5 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			files = (
 				702083181BA443B9007C8DD5 /* ViewController.swift in Sources */,
 				702083161BA443B9007C8DD5 /* AppDelegate.swift in Sources */,
+				702083361BA48B15007C8DD5 /* Array+Shuffling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
