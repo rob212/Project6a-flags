@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XUX-P9-jDB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XUX-P9-jDB">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQZ-tB-nnr">
+                                <rect key="frame" x="489" y="72" width="91" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="49V-ff-q08"/>
+                                    <constraint firstAttribute="width" constant="91" id="cjF-2N-HoG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-cb-jfc">
-                                <rect key="frame" x="200" y="100" width="200" height="100"/>
+                                <rect key="frame" x="200" y="120" width="200" height="100"/>
                                 <animations/>
                                 <state key="normal" image="uk"/>
                                 <connections>
@@ -26,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-Sa-MV6">
-                                <rect key="frame" x="200" y="230" width="200" height="100"/>
+                                <rect key="frame" x="200" y="250" width="200" height="100"/>
                                 <animations/>
                                 <state key="normal" image="uk"/>
                                 <connections>
@@ -34,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqD-GO-8VM">
-                                <rect key="frame" x="200" y="360" width="200" height="100"/>
+                                <rect key="frame" x="200" y="380" width="200" height="100"/>
                                 <animations/>
                                 <state key="normal" image="uk"/>
                                 <connections>
@@ -47,9 +59,11 @@
                         <constraints>
                             <constraint firstItem="ypn-Sa-MV6" firstAttribute="top" secondItem="NYm-cb-jfc" secondAttribute="bottom" constant="30" id="0ks-Vq-gwV"/>
                             <constraint firstItem="NYm-cb-jfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Sp-Jz-tlK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NQZ-tB-nnr" secondAttribute="trailing" id="6tf-ZS-2PH"/>
                             <constraint firstItem="ypn-Sa-MV6" firstAttribute="centerX" secondItem="NYm-cb-jfc" secondAttribute="centerX" id="IdO-7c-EAy"/>
                             <constraint firstItem="wqD-GO-8VM" firstAttribute="top" secondItem="ypn-Sa-MV6" secondAttribute="bottom" constant="30" id="J74-FE-f9v"/>
-                            <constraint firstItem="NYm-cb-jfc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="QmH-Xs-yDS"/>
+                            <constraint firstItem="NYm-cb-jfc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="QmH-Xs-yDS"/>
+                            <constraint firstItem="NQZ-tB-nnr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oB3-Ko-W0b"/>
                             <constraint firstItem="wqD-GO-8VM" firstAttribute="centerX" secondItem="ypn-Sa-MV6" secondAttribute="centerX" id="pJQ-8I-rvW"/>
                         </constraints>
                     </view>
@@ -58,6 +72,7 @@
                         <outlet property="button1" destination="NYm-cb-jfc" id="ZLW-Mp-K03"/>
                         <outlet property="button2" destination="ypn-Sa-MV6" id="CWV-ax-eIs"/>
                         <outlet property="button3" destination="wqD-GO-8VM" id="hvO-AD-RLL"/>
+                        <outlet property="scoreLabel" destination="NQZ-tB-nnr" id="fKr-BH-etZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

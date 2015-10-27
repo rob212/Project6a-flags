@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var countries = [String]()
     var score = 0
@@ -30,12 +31,12 @@ class ViewController: UIViewController {
         button1.layer.borderColor = UIColor.lightGrayColor().CGColor
         button1.layer.borderColor = UIColor.lightGrayColor().CGColor
         button3.layer.borderColor = UIColor.lightGrayColor().CGColor
+        updateScore(increment: 0)
         askQuestion()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: Custom functions
@@ -54,14 +55,24 @@ class ViewController: UIViewController {
         
         if sender.tag == correctAnswer {
             title = "Correct"
-            ++score
+             updateScore(increment: 1)
         } else {
             title = "Wrong"
-            --score
+             updateScore(increment: -1)
         }
         let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .Alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: askQuestion))
         presentViewController(ac, animated: true, completion: nil)
     }
+    
+    func updateScore(increment value: Int){
+        if value > 0 {
+            ++score
+        } else if value < 0 {
+            --score
+        }
+        scoreLabel.text = "score: \(score)"
+    }
+    
 }
 
