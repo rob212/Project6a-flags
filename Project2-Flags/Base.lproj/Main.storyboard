@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -32,6 +33,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-cb-jfc">
                                 <rect key="frame" x="200" y="120" width="200" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NYm-cb-jfc" secondAttribute="height" multiplier="2:1" id="Gae-pX-xds"/>
+                                </constraints>
                                 <state key="normal" image="uk"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kmM-v4-Nfi"/>
@@ -40,6 +44,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-Sa-MV6">
                                 <rect key="frame" x="200" y="250" width="200" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ypn-Sa-MV6" secondAttribute="height" multiplier="2:1" id="Mnd-TN-YWw"/>
+                                </constraints>
                                 <state key="normal" image="uk"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJO-OL-wPm"/>
@@ -48,6 +55,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqD-GO-8VM">
                                 <rect key="frame" x="200" y="380" width="200" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wqD-GO-8VM" secondAttribute="height" multiplier="2:1" id="Q4j-mK-UgW"/>
+                                </constraints>
                                 <state key="normal" image="uk"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SkA-I6-zIE"/>
@@ -60,9 +70,12 @@
                             <constraint firstItem="ypn-Sa-MV6" firstAttribute="top" secondItem="NYm-cb-jfc" secondAttribute="bottom" constant="30" id="0ks-Vq-gwV"/>
                             <constraint firstItem="NYm-cb-jfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Sp-Jz-tlK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NQZ-tB-nnr" secondAttribute="trailing" id="6tf-ZS-2PH"/>
+                            <constraint firstItem="ypn-Sa-MV6" firstAttribute="height" secondItem="NYm-cb-jfc" secondAttribute="height" id="FYY-jK-YMx"/>
                             <constraint firstItem="ypn-Sa-MV6" firstAttribute="centerX" secondItem="NYm-cb-jfc" secondAttribute="centerX" id="IdO-7c-EAy"/>
                             <constraint firstItem="wqD-GO-8VM" firstAttribute="top" secondItem="ypn-Sa-MV6" secondAttribute="bottom" constant="30" id="J74-FE-f9v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wqD-GO-8VM" secondAttribute="bottom" constant="20" id="Qez-CX-0r0"/>
                             <constraint firstItem="NYm-cb-jfc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="QmH-Xs-yDS"/>
+                            <constraint firstItem="wqD-GO-8VM" firstAttribute="height" secondItem="ypn-Sa-MV6" secondAttribute="height" id="WMH-BR-j9K"/>
                             <constraint firstItem="NQZ-tB-nnr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oB3-Ko-W0b"/>
                             <constraint firstItem="wqD-GO-8VM" firstAttribute="centerX" secondItem="ypn-Sa-MV6" secondAttribute="centerX" id="pJQ-8I-rvW"/>
                         </constraints>
